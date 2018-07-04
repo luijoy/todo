@@ -3,7 +3,7 @@ class TodoItemsController < ApplicationController
 
   def create
     @todo_item = @todo_list.todo_items.create(todo_item_params)
-    redirect_to_todo_list_path(@todo_list)
+    redirect_to todo_list_path(@todo_list)
   end
 
   private
