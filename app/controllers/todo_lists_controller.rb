@@ -24,7 +24,6 @@ class TodoListsController < ApplicationController
   # POST /todo_lists
   # POST /todo_lists.json
   def create
-    raise
     @todo_list = TodoList.new(todo_list_params)
 
     respond_to do |format|
